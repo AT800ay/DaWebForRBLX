@@ -21,9 +21,12 @@ body {
 
 p {
     color:rgb(255,255,255);
+    margin: 50px;
 }
 h1 { 
     border: 20px ridge rgb(70, 255, 3);
     font-family:RobloxFontV2;
     padding: 30px;
+    margin: auto;
+    width: 400px;
 }
