@@ -21,6 +21,7 @@ body {
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  margin: 75px 0;
 
 }
 
@@ -38,3 +39,63 @@ h1 {
 a {
     color: black;
 }
+.main-header {
+    font-size: 60px; 
+    color: gold;
+}
+
+#pong-body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.secondary-txt
+{
+    font-family: RobloxFontV2;   
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #757575;
+  }
+
+  #navbar {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black; }

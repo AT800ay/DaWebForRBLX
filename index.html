@@ -1,13 +1,20 @@
-<!DOCTYPE html> <!--do <!-- to make comments-->
+<!DOCTYPE html> 
 <html>
 
 <head>
-    <title>ROBLOXY THINGS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>RANDOM THINGS</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <h1 style="font-size: 60px; color: gold;   " title="CLIK THE PIC">ROBLOX</h1>
+    <div id="navbar">
+        <a href="#">Home</a>
+        <a href="html_pages/pong.html">pong(WIP)</a>
+        <a href="html_pages/scratch.html">About Scratch lol</a>
+    </div>
+
+    <h1 class="main-header" title="CLIK THE PIC">ROBLOX</h1>
     <hr>
     <p>
         Roblox is a 2006 online game platform and game creation system developed by Roblox Corporation<br> that allows
@@ -18,22 +25,34 @@
         <i>THE</i>
         <small>PIC.</small>
     </p>
-    <p style="font-family: RobloxFontV2;">
-        <p> <mark>this page is about</mark></p>
-        <p style="font-family: RobloxFontV2;"> <sub>ROBLOX</sub> .</p>
-        <p style="font-family: RobloxFontV2;"> <sup>THIS IS STILL IN DEVMELOPMENT</sup> </p>
-        <p style=" font-family: RobloxFontV2; color:rgb(255, 0, 0); font-size: 150%;">
-            CLICK PIC TO GO TO ROBLOX
-        </p>
+    <p class="secondary-txt">
+    <p> <mark>this page is about</mark></p>
+    <p class="secondary-txt"> <sub>ROBLOX</sub> .</p>
+    <p class="secondary-txt"> <sup>THIS IS STILL IN DEVMELOPMENT</sup> </p>
+    <p class="secondary-txt" style="color:rgb(255, 0, 0); font-size: 150%;">
+        CLICK PIC TO GO TO ROBLOX
+    </p>
     </p>
     <p>
-        <a href="scratch.html">next page</a>
-    
+        <a href="/html_pages/scratch.html">next page</a>
+
     </p>
     <a href="https://roblox.com" target="_blank">
-        <img src="images/Roblox.png" width="900
-        " alt="Image did not load if you are seeing this meesage click here or reload this tab">
+        <img src="../images/Roblox.png" width="900"
+            alt="did not load if you are seeing this meesage click here or reload this tab">
     </a>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>
